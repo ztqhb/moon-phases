@@ -132,6 +132,8 @@
 </style>
 </head>
 <body>
+<div id="loadscreen" style="position:fixed;inset:0;background:#050810;color:#9fb6d0;display:flex;align-items:center;justify-content:center;font-family:Microsoft YaHei,sans-serif;font-size:16px;z-index:999">🌙 月相演示加载中…</div>
+<script>(function(){var t=setInterval(function(){if(window.THREE_READY||window.THREE_LOAD_ERROR){clearInterval(t);var el=document.getElementById("loadscreen");if(el)el.style.display="none";}},300);setTimeout(function(){var el=document.getElementById("loadscreen");if(el)el.style.display="none";},15000);})();</script>
 
 <div id="loader"><div class="spinner"></div>加载中...</div>
 <div id="canvas-container"></div>
